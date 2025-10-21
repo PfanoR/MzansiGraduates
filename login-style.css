@@ -1,0 +1,152 @@
+body {
+  background: #f1f1f1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  padding-top: 70px; /* space for fixed header */
+}
+
+/* Header */
+header.navbar {
+  background: linear-gradient(90deg, #764ba2, #667eea);
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1030;
+  padding: 0.5rem 1rem;
+}
+
+header.navbar .navbar-brand,
+header.navbar .nav-link {
+  color: white !important;
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
+
+header.navbar .nav-link:hover,
+header.navbar .nav-link.active {
+  color: #e0e0ff !important;
+}
+
+header.navbar .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* Login box */
+.login-container {
+  max-width: 400px;
+  margin: auto;
+  margin-top: 60px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.input-group-text {
+  background-color: #e9ecef;
+  border-right: 0;
+}
+
+.form-control {
+  border-left: 0;
+}
+/* Footer */
+footer.footer {
+  background: linear-gradient(90deg, #1e3c72, #2a5298); /* Deep blue gradient */
+  color: #ffffff; /* White text */
+  margin-top: auto;
+  padding: 40px 20px 20px 20px;
+}
+
+footer.footer h3,
+footer.footer h5 {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+footer.footer p {
+  font-size: 14px;
+  color: #dddddd;
+  margin-bottom: 10px;
+}
+
+footer.footer ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+footer.footer li {
+  margin-bottom: 8px;
+}
+
+footer.footer a {
+  text-decoration: none;
+  color: #e0e0e0; /* Soft white for links */
+  transition: color 0.3s ease;
+}
+
+footer.footer a:hover {
+  color: #00b4d8; /* Bright blue hover */
+}
+
+footer.footer .social-links {
+  margin: 15px 0;
+}
+
+footer.footer .social-links a {
+  color: white;
+  margin-right: 15px;
+  font-size: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+footer.footer .social-links a:hover {
+  transform: scale(1.2);
+  color: #00b4d8;
+  background-color: white;
+}
+
+footer.footer hr {
+  border-color: rgba(255, 255, 255, 0.2);
+  margin: 30px 0;
+}
+
+footer.footer small {
+  color: #e0e0e0;
+  display: block;
+  margin-top: 15px;
+}
+
+
+
+
+/* Extra links */
+.extra-links a {
+  color: #0077b6;
+  text-decoration: none;
+}
+
+.extra-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive spacing if needed */
+@media (max-width: 768px) {
+  .login-container {
+    margin: 20px auto;
+    padding: 20px;
+  }
+}

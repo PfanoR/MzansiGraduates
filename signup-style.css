@@ -1,0 +1,49 @@
+ header.navbar {
+      background: linear-gradient(90deg, #5a3fbd, #2a5298);
+      /* purple to blue gradient */
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1030;
+      padding: 0.5rem 1rem;
+    }
+
+    header.navbar .navbar-brand,
+    header.navbar .nav-link {
+      color: #fff !important;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    header.navbar .nav-link:hover,
+    header.navbar .nav-link.active {
+      color: #d1c4e9 !important;
+      /* subtle lighter purple on hover */
+    }
+
+    header.navbar .navbar-toggler {
+      border-color: rgba(255, 255, 255, 0.3);
+    }
+
+    header.navbar .navbar-toggler-icon {
+      filter: invert(1);
+    }
+
+    body {
+      padding-top: 70px;
+      /* space below fixed header */
+    }
+
+    .signup-box {
+      max-width: 420px;
+      /* max width */
+      width: 100%;
+      /* responsive but limited */
+      margin: 0 auto;
+      /* center horizontally */
+      background-color: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+    }
